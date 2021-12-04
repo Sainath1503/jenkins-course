@@ -4,8 +4,8 @@ node {
   def to = emailextrecipients([
           [$class: 'CulpritsRecipientProvider'],
           [$class: 'DevelopersRecipientProvider'],
-          [$class: 'RequesterRecipientProvider'],
-		  'dhyaneshshri@gmail.com'
+          [$class: 'RequesterRecipientProvider']
+		  
   ])
 
   // job
