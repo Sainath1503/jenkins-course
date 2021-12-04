@@ -1,7 +1,12 @@
 node {
 
   // config 
-  def to = 'dhyaneshshri@gmail.com;sai93@live.in'
+  def to = emailextrecipients([
+          [$class: 'CulpritsRecipientProvider'],
+          [$class: 'DevelopersRecipientProvider'],
+          [$class: 'RequesterRecipientProvider']
+		  
+  ])
 
   // job
   try {
