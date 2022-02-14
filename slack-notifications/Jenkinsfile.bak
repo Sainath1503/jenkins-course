@@ -15,7 +15,7 @@ node {
 
     // send slack notification
 	node{
-    sh "curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"Hello, World!\"}' https://hooks.slack.com/services/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"}
+    sh "curl -X POST --data-urlencode "payload={\"channel\": \"#testautomation\", \"username\": \"webhookbot\", \"text\": \"This is posted to #testautomation and comes from a bot named webhookbot.\", \"icon_emoji\": \":ghost:\"}" https://hooks.slack.com/services/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"}
     // throw the error
     throw e;
   }
