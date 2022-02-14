@@ -14,7 +14,7 @@ node {
     currentBuild.result = "FAILURE";
 
     // send slack notification
-    POST https://hooks.slack.com/services/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
+    Post https://hooks.slack.com/services/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
 	Content-type: application/json
 	{
 	"text":"Hello, world."
